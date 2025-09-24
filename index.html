@@ -1,49 +1,154 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        table {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            table-layout: fixed;
+        }
+
+        th {
+            font-size: 32px;
+            background-color: rgb(210, 116, 82);
+        }
+
+        tbody {
+            background-color: beige;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    table {
-        width: 100vw;
-        height: 100vh;
-        text-align: center;
-    }
-    th {
-        font-size: 32px;
-    }
-</style>
+
 <body>
     <table>
         <thead>
-            <th colspan="4">Encabezado</th>
+            <tr>
+                <th colspan="4">
+                    <h1>Gastronomía Internacional</h1>
+                </th>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Columna</td>
-                <td colspan="2">Columna</td>
-                <td>Columna</td>
+                <td>
+                    <h2>América</h2>
+                    <ul>
+                        <li>México: Tacos, guacamole, mole.</li>
+                        <li>Perú: Ceviche, lomo saltado.</li>
+                        <li>Colombia: Arepa, lechona. </li>
+                    </ul>
+                    <img src="img/lomo-saltado-peruano.jpeg" alt="Imágen ilustrativa del platillo lomo saltado"
+                        width="202px" height="113px" title="Imágen ilustrativa del platillo lomo saltado">
+                </td>
+                <td colspan="2">
+                    <h2>Europa</h2>
+                    <ul>
+                        <li>Italia: Pasta, pizza, rissoto.</li>
+                        <li>Francia: Croissant, quiche, coq au vin.</li>
+                        <li>España: Paella, tapas, jamón ibérico.</li>
+                    </ul>
+                    <img src="img/Coq-Au-Vin.jpg" alt="Imágen ilustrativa del platillo coq au vin" width="208px"
+                        height="113px" title="Imágen ilustrativa del platillo coq au vin">
+                </td>
+                <td>
+                    <h2>África</h2>
+                    <ul>
+                        <li>Marruecos: Cuscús, tajín.</li>
+                        <li>Etiopía: Injera con guisos.</li>
+                        <li>Sudáfrica: Bobotie, braai (parrillada)</li>
+                    </ul>
+                    <img src="img/cuscus-platillo.jpg" alt="Imágen ilustrativa del platillo cuscus" width="176px"
+                        height="113px" title="Imágen ilustrativa del platillo cuscus">
+                </td>
             </tr>
             <tr>
-                <td colspan="2">Columna</td>
-                <td colspan="2">Columna</td>
+                <td colspan="2">
+                    <h2>Asia</h2>
+                    <ul>
+                        <li>China: dim sum, pato pekinés.</li>
+                        <li>Japón: sushi, ramen.</li>
+                        <li>India: curry, samosas, naan.</li>
+                    </ul>
+                    <img src="img/pato-pekin-platillo.jpg" alt="Imágen ilustrativa del platillo pato pekinés"
+                        width="175px" height="113px" title="Imágen ilustrativa del platillo pato pekinés">
+                </td>
+                <td colspan="2">
+                    <h2>Oceanía</h2>
+                    <ul>
+                        <li>Bush Tucker: Más que platillo, se refiere a la dieta basada en la flora y fauna nativas de
+                            la región, como la carne de canguro.</li>
+                        <li>Lamington: Bizcocho cubierto de chocolate y coco.</li>
+                        <li>Pavlova: Un postre de merengue con crema y frutas. </li>
+                    </ul>
+                    <img src="img/pavlova.jpg" alt="Imágen ilustrativa del postre pavlova" width="150px" height="113px"
+                        title="Imágen ilustrativa del postre pavlova">
+                </td>
             </tr>
             <tr>
-                <td colspan="4">Columna</td>
+                <td colspan="4" id="img-container">
+                    <img src="img/Top-10-tipos-de-cocina-internacional-mas-populares-del-mundo.jpg" alt="" width="374px"
+                        height="200px">
+                    <img src="img/collage_gastronomia.jpg" alt="" width="360px" height="200px">
+                </td>
             </tr>
             <tr>
-                <td>Columna</td>
-                <td>Columna</td>
-                <td>Columna</td>
-                <td>Columna</td>
+                <td>
+                    <h2>Ingredientes universales</h2>
+                    <ul>
+                        <li>Arroz</li>
+                        <li>Trigo</li>
+                        <li>Maíz</li>
+                    </ul>
+                </td>
+                <td>
+                    <h2>Bebidas más populares</h2>
+                    <ul>
+                        <li>Espresso (Italia)</li>
+                        <li>Mate (Argentina)</li>
+                        <li>Té verde (China / Japón)</li>
+                        <li>Tequila y mezcal (México)</li>
+                    </ul>
+                </td>
+                <td>
+                    <h2>Postres famosos</h2>
+                    <ul>
+                        <li>Tiramisú (Italia)</li>
+                        <li>Churros con chocolate (España)</li>
+                        <li>Mochi (Japón)</li>
+                        <li>Brigadeiro (Brasil)</li>
+                    </ul>
+                </td>
+                <td>
+                    <h2>Datos curiosos</h2>
+                    <ul>
+                        <li>El sushi originalmente era una forma de conservar el pescado en arroz fermentado.</li>
+                        <li>El cacao era tan valioso en las culturas prehispánicas de América, que se usaba como moneda.
+                        </li>
+                        <li>La cerveza es una de las bebidas más antiguas del mundo, existen registros sumerios que
+                            indican que se ya se producía hace más de 7.000 años.</li>
+                    </ul>
+                </td>
             </tr>
         </tbody>
     </table>
+
 </body>
+
 </html>
